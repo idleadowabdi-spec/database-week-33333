@@ -1,0 +1,65 @@
+WEEK 3 DATABASE ASSIGNMENT
+
+Topic: SQL Table Creation, Data Insertion, and Updating Records
+
+Question 1: Create a Student Table
+
+SQL Statement:
+
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    fullName VARCHAR(100),
+    age INT
+);
+
+
+Explanation:
+
+id INT PRIMARY KEY: Creates an integer ID that uniquely identifies each student.
+fullName VARCHAR(100): Stores the student's full name with a maximum of 100 characters.
+age INT: Stores the student's age as an integer.
+Question 2: Insert at Least 3 Records into the Student Table
+
+SQL Statement:
+
+INSERT INTO student (id, fullName, age)
+VALUES
+    (1, 'John Kamau', 19),
+    (2, 'Mary Wanjiku', 18),
+    (3, 'Peter Otieno', 21);
+
+
+Explanation:
+
+This statement inserts three student records into the student table. Each record contains the student's ID, full name, and age.
+
+Expected Table After Insertion:
+
+id	fullName	age
+1	John Kamau	19
+2	Mary Wanjiku	18
+3	Peter Otieno	21
+Question 3: Update the Age of the Student with ID 2 to 20
+
+SQL Statement:
+
+UPDATE student
+SET age = 20
+WHERE id = 2;
+
+
+Explanation:
+
+UPDATE student: Specifies the table to modify.
+SET age = 20: Changes the student's age to 20.
+WHERE id = 2: Ensures that only the student whose ID is 2 is updated.
+
+Expected Table After Updating:
+
+id	fullName	age
+1	John Kamau	19
+2	Mary Wanjiku	20
+3	Peter Otieno	21
+Conclusion
+
+This assignment demonstrates the basic use of SQL statements to create a table, insert multiple records, and update existing data. These operations are essential for managing and maintaining accurate information in a relational database.
